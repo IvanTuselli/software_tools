@@ -59,7 +59,7 @@ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 ### pwntools
 Esegui in ordine:
 ```
-apt-get install python3-pip
+apt-get install python3-pip -y
 pip3 install pwntools
 ```
 

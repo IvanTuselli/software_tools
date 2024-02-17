@@ -74,7 +74,7 @@ wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_1
 ```
 Per eseguire l'unzip del file da terminele prova con:
 ```
-apt-get install unzip
+apt-get install unzip -y
 unzip ghidra_11.0.1_PUBLIC_20240130.zip
 ```
 Per avviare Ghidra esegui il file:

@@ -51,7 +51,7 @@ then
 
         if [ $a = 'y' -o $a = 'Y' ]
         then
-            bash -c "$(curl -fsSL https://raw.githubusercontent.com/hugsy/gef/main/scripts/gef.sh)"
+            bash -c "$(curl -fsSL https://raw.githubusercontent.com/hugsy/gef/main/scripts/gef.sh  | tail -n +3)"
         fi
     fi
 

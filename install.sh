@@ -51,7 +51,7 @@ then
 
         if [ $a = 'y' -o $a = 'Y' ]
         then
-            bash -c '$(curl -fsSL https://gef.blah.cat/sh)'
+            bash -c '$(curl -fsSL https://gef.blah.cat/sh | sed -i 1d)'
         fi
     fi
 

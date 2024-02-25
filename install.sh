@@ -51,7 +51,7 @@ then
 
         if [ $a = 'y' -o $a = 'Y' ]
         then
-            bash -c '$(curl -fsSL https://gef.blah.cat/sh | sed -i 1d)'
+            bash -c "$(curl -fsSL https://raw.githubusercontent.com/hugsy/gef/main/scripts/gef.sh)"
         fi
     fi
 
@@ -97,7 +97,7 @@ then
 elif [ $a -eq 1 ]
 then
     apt-get install file libc-bin binutils ltrace strace gdb python3-pip unzip -y
-    bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/hugsy/gef/main/scripts/gef.sh | tail -n +3)"
     pip3 install pwntools
     wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.0.1_build/ghidra_11.0.1_PUBLIC_20240130.zip
     unzip ghidra_11.0.1_PUBLIC_20240130.zip
